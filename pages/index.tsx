@@ -2,9 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState, MouseEvent } from "react";
-import Particles from "react-tsparticles";
-import type { Engine } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
 
 const hero = {
   name: "Shaik Abid Bilal",
@@ -91,10 +88,12 @@ export default function Home() {
     };
     const navLinks = document.querySelectorAll("nav a[href^='#']");
     navLinks.forEach((a) => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       a.addEventListener("click", handleNavClick as any);
     });
     return () => {
       navLinks.forEach((a) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         a.removeEventListener("click", handleNavClick as any);
       });
     };
@@ -107,6 +106,7 @@ export default function Home() {
       const scrollY = window.scrollY + 120;
       let current = "#about";
       for (let i = 0; i < sectionElements.length; i++) {
+        // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
         if (sectionElements[i] && sectionElements[i]?.offsetTop !== undefined && sectionElements[i]!.offsetTop <= scrollY) {
           current = navLinks[i].href;
         }
