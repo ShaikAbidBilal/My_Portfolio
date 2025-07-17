@@ -9,12 +9,11 @@ const hero = {
   location: "Mangalagiri, Guntur District, Andhra Pradesh, India",
   intro:
     "I'm a passionate Full Stack Software Engineer specializing in React, Next.js, and blockchain integration. I love building scalable, user-friendly web applications and am always eager to learn new technologies.",
-  photo: "/images/profile.png",
+  photo: "images/profile.png",
   email: "abidbilal624@gmail.com",
   github: "https://github.com/ShaikAbidBilal",
   linkedin: "https://linkedin.com/in/shaik-abid-bilal",
   phone: "+91 8985564003",
-  resume: "/resume.pdf",
 };
 
 const about = {
@@ -62,6 +61,30 @@ const projects = [
       "Developed a deep learning model to detect morphed face images for identity fraud prevention using Generative Adversarial Networks (GANs) and OpenCV for face preprocessing. Achieved high accuracy through data augmentation and transfer learning.",
     stack: ["Python", "GANs", "OpenCV", "Transfer Learning"],
     link: "#",
+  },
+  {
+    name: "Personal Portfolio Website",
+    description: "A modern, responsive portfolio website built with Next.js and Tailwind CSS.",
+    stack: ["Next.js", "React", "Tailwind CSS"],
+    link: "https://your-portfolio-link.com",
+  },
+  {
+    name: "Chat Application",
+    description: "A real-time chat application with WebSocket and Node.js backend.",
+    stack: ["React", "Node.js", "WebSocket"],
+    link: "https://your-chat-app-link.com",
+  },
+  {
+    name: "E-Commerce Platform",
+    description: "A scalable e-commerce platform with product listings, cart, and payment integration.",
+    stack: ["React", "Next.js", "Stripe", "MongoDB"],
+    link: "https://your-ecommerce-link.com",
+  },
+  {
+    name: "Blog CMS",
+    description: "A content management system for blogs with markdown support and user authentication.",
+    stack: ["Next.js", "Node.js", "MongoDB", "JWT"],
+    link: "https://your-blog-cms-link.com",
   },
 ];
 
@@ -129,7 +152,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
         <title>Shaik Abid Bilal | Portfolio</title>
         <meta name="description" content="Full Stack Software Engineer Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
       {/* Navigation with animated underline (dark theme) */}
       <nav className="fixed top-0 left-0 w-full bg-[#18181b] bg-opacity-95 z-50 shadow-md border-b border-[#23232a]">
